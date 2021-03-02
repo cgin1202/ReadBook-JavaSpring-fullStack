@@ -1,0 +1,356 @@
+/*
+Font import
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap');
+
+
+/*
+웹 틀 CSS
+*/
+div#wapper{
+    width:100%;
+    text-align:left;
+    min-height:300px;
+    margin: 0 auto;
+    font-family: "Source Serif Pro", serif;
+}
+
+header{
+    text-align:left;
+    margin-left:30%;
+    height:5%;
+}
+
+nav{
+    float:right;
+    text-align:center;
+    height:5%;
+    margin-right:25%;
+}
+
+section{
+    text-align:center;
+    height:60%;
+    width:80%;
+    margin: 0 auto;
+
+}
+
+footer{
+    text-align:center;
+    clear:both;
+    height:10%;
+    margin: 0 auto;
+}
+
+
+/*
+Index button CSS 코드
+*/
+
+#index>.btn {
+	font-size:12px;
+	text-decoration:none;
+	color: #1f183f;
+	border:1px solid #1f183f;
+	outline:1px solid #1f183f;
+	outline-offset:-2px;
+	transition: outline-offset 200ms ease-in-out;
+}
+
+#index>.btn:hover {
+	text-decoration:none;
+	color:#1f183f;
+	border:1px solid #1f183f;
+	outline:1px solid #1f183f;
+	outline-offset:2px;
+	background-color:rgb(192, 192, 192);
+}
+
+
+/*
+Mypage button CSS 코드
+*/
+
+
+#mypage>.btn {
+	text-decoration:none;
+	color: #1f183f;
+	border:2px solid #1f183f;
+	outline:2px solid #1f183f;
+	outline-offset:-2px;
+	padding:.5em 1.5em;
+	transition: outline-offset 200ms ease-in-out;
+}
+
+#mypage>.btn:hover {
+	text-decoration:none;
+	color:rgb(128, 128, 128);
+	border:2px solid rgb(128, 128, 128);
+	outline:2px solid rgb(128, 128, 128);
+	outline-offset:2px;
+	padding:.5em 1.5em;
+	background-color:rgb(192, 192, 192);
+}
+
+
+/*
+TABLE CSS 코드
+*/
+
+table.type09 {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+
+}
+table.type09 thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: center;
+  color: #369;
+  border-bottom: 3px solid #036;
+}
+table.type09 tbody th {
+  width: 150px;
+  padding: 8px;
+  font-weight: bold;
+  vertical-align: center;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+}
+table.type09 td {
+  width: 150px;
+  padding: 8px;
+  vertical-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/*
+검색창 CSS 코드
+*/
+
+#search>.green_window {
+	display: inline-block;
+    width: 386px; 
+    height: 36px;
+	border: 3px solid #2db400;
+	background: white;
+}
+#search>.input_text {
+    text-align: left;
+    height: 21px;
+	margin: 6px 0 0 9px;
+	border: none;
+	line-height: 21px;
+	font-weight: bold;
+	font-size: 16px;
+	outline: none;
+}
+#search>span>input:focus{
+    outline:none;
+}
+
+#search>.sch_smit {
+	width: 108px; height: 36px;
+	margin: 0; border: 0;
+	vertical-align: top;
+	background: #22B600;
+	color: white;
+	font-weight: bold;
+	border-radius: 1px;
+	cursor: pointer;
+}
+#search>.sch_smit:hover {
+	background: #56C82C;
+}
+
+/*
+로그인, 회원가입 CSS 코드
+*/
+
+.user>input[type="submit"],
+.user>input[type="reset"],
+.user>input[type="button"],
+.user>button,
+.user>.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 0.375em;
+  border: 0;
+  box-shadow: inset 0 0 0 2px #f8bd1b;
+  color:  #f8bd1b;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.075em;
+  padding: 0 2.25em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap; }
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  button:hover,
+  .button:hover {
+    background-color: rgba(245, 106, 106, 0.05); }
+  input[type="submit"]:active,
+  input[type="reset"]:active,
+  input[type="button"]:active,
+  button:active,
+  .button:active {
+    background-color: rgba(245, 106, 106, 0.15); }
+  input[type="submit"].icon:before,
+  input[type="reset"].icon:before,
+  input[type="button"].icon:before,
+  button.icon:before,
+  .button.icon:before {
+    margin-right: 0.5em; }
+  input[type="submit"].fit,
+  input[type="reset"].fit,
+  input[type="button"].fit,
+  button.fit,
+  .button.fit {
+    width: 100%; }
+  input[type="submit"].small,
+  input[type="reset"].small,
+  input[type="button"].small,
+  button.small,
+  .button.small {
+    font-size: 0.6em; }
+  input[type="submit"].large,
+  input[type="reset"].large,
+  input[type="button"].large,
+  button.large,
+  .button.large {
+    font-size: 1em;
+    height: 3.65em;
+    line-height: 3.65em; }
+  input[type="submit"].primary,
+  input[type="reset"].primary,
+  input[type="button"].primary,
+  button.primary,
+  .button.primary {
+    background-color: #f56a6a;
+    box-shadow: none;
+    color: #ffffff !important; }
+    input[type="submit"].primary:hover,
+    input[type="reset"].primary:hover,
+    input[type="button"].primary:hover,
+    button.primary:hover,
+    .button.primary:hover {
+      background-color: #f67878; }
+    input[type="submit"].primary:active,
+    input[type="reset"].primary:active,
+    input[type="button"].primary:active,
+    button.primary:active,
+    .button.primary:active {
+      background-color: #f45c5c; }
+  input[type="submit"].disabled, input[type="submit"]:disabled,
+  input[type="reset"].disabled,
+  input[type="reset"]:disabled,
+  input[type="button"].disabled,
+  input[type="button"]:disabled,
+  button.disabled,
+  button:disabled,
+  .button.disabled,
+  .button:disabled {
+    pointer-events: none;
+    opacity: 0.25; }
+
+
+
+/*
+ID, PW 입력창 CSS 코드
+*/
+
+    .user>input[type="text"],
+    .user>input[type="password"],
+    .user>input[type="email"],
+    .user>input[type="tel"],
+    .user>input[type="url"],
+    .user>input[type="pw"],
+    .user>select,
+    .user>textarea {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      background: #ffffff;
+      border-radius: 0.375em;
+      border: none;
+      border: solid 1px rgba(97, 201, 113, 0.75);
+      color: inherit;
+      display: block;
+      outline: 0;
+      padding: 0 1em;
+      text-decoration: none;
+      width: 70%; }
+
+
+      .user>input[type="text"]:invalid,
+      .user>input[type="password"]:invalid,
+      .user>input[type="email"]:invalid,
+      .user>input[type="tel"]:invalid,
+      .user>input[type="search"]:invalid,
+      .user>input[type="url"]:invalid,
+      .user>select:invalid,
+      .user>textarea:invalid {
+        box-shadow: none; }
+
+
+      .user>input[type="text"]:focus,
+      .user>input[type="password"]:focus,
+      .user>input[type="email"]:focus,
+      .user>input[type="tel"]:focus,
+      .user>input[type="search"]:focus,
+      .user>input[type="url"]:focus,
+      .user>select:focus,
+      .user>textarea:focus {
+        border-color: #f0d16b;
+        box-shadow: 0 0 0 1px  #f0d16b; 
+    }
+
+
+
+    /*
+    CreateUser 페이지
+    form CSS 코드
+
+   overridd from) https://webdir.tistory.com/429
+    */
+  
+    .textbox {position: relative; margin: 15px}
+    
+    .textbox label {
+      position: absolute;
+      top: 1px;  /* input 요소의 border-top 설정값 만큼 */
+      left: 1px;  /* input 요소의 border-left 설정값 만큼 */
+      padding: .8em .5em;  /* input 요소의 padding 값 만큼 */
+      color: #999;
+      cursor: text;
+    }
+    
+    .textbox input[type="text"],
+    .textbox input[type="password"] {
+      width: 100%;  /* 원하는 너비 설정 */ 
+      height: auto;  /* 높이값 초기화 */
+      line-height : normal;  /* line-height 초기화 */
+      padding: .8em .5em; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+      border: 1px solid #999;
+      border-radius: 0;  /* iSO 둥근모서리 제거 */
+      outline-style: none;  /* 포커스시 발생하는 효과 제거를 원한다면 */
+      -webkit-appearance: none;  /* 브라우저별 기본 스타일링 제거 */
+      -moz-appearance: none;
+      appearance: none;
+    }
